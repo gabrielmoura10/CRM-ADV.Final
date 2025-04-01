@@ -10,7 +10,7 @@ use App\Http\Controllers\API\FinanceiroController;
 use App\Http\Controllers\API\DashboardController;
 
 // Rotas públicas
-Route::post('/login', [AuthController::class, 'login']);
+Route::post('/auth/login', [AuthController::class, 'login']);
 
 // Rotas protegidas
 Route::middleware('auth:sanctum')->group(function () {
